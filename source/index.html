@@ -5,59 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Анна Кондакова - Фотограф</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo.svg" alt="Анна Кондакова">
-      </a>
-    <div class="page-header__nav">
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="item-link" href="index.html">Главная</a>
+  <div class="page-header__wrapper fix-nav">
+    <header class="page-header">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo.svg" alt="Анна Кондакова">
+        </a>
+      </div>
+      <div class="page-header__nav">
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="item-link item-link--active">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--sub-nav">
+              <a class="item-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="site-list__item">
+              <a class="item-link" href="about.html">Обо мне</a>
+            </li>
+            <li class="site-list__item">
+              <a class="item-link" href="price.html">Прайс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="item-link" href="contact.html">Контакты</a>
+           </li>
+         </ul>
+        </nav>
+      </div>  
+    </header>
+  </div>
+  <div class="main-footer__wrapper">
+    <main class="main-content">
+      <div class="main-content__photo-wrapper">
+        <img class="main-content__image" src="img/main.jpg" alt="Главное Фото">
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__copperight">
+        <p class="copiperight-text">&copy; Анна Кондакова</p>
+      </div>
+      <div class="page-footer__social-wrapper">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="">
+              <img class="social-list__link-image" src="img/whatsapp.svg" alt="whatsapp">
+            </a>
           </li>
-          <li class="site-list__item">
-            <a class="item-link" href="portfolio.html">Портфолио</a>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://www.instagram.com/anakondafoto/">
+              <img class="social-list__link-image" src="img/instagram.svg" alt="instagram">
+            </a>
           </li>
-          <li class="site-list__item">
-            <a class="item-link" href="about.html">Обо мне</a>
-          </li>
-          <li class="site-list__item">
-            <a class="item-link" href="price.html">Прайс</a>
-          </li>
-          <li class="site-list__itemm">
-            <a class="item-link"йц href="contact.html">Контакты</a>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://vk.com/yourphotographerspb">
+              <img class="social-list__link-image" src="img/vk.svg" alt="vk">
+            </a>
           </li>
         </ul>
-      </nav>
-    </div>
-    
-  </header>
-  <main>
-    <div>
-      <img src="img/main.png">
-    </div>
-  </main>
-  <footer>
-    <div>
-      <p>Анна Кондакова</p>
-    </div>
-    <div>
-      <ul>
-        <li>
-          <a href="">
-            <img src="img/insta-fb.svg">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="img/icon-insta.svg">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+      </div>
+    </footer>
+  </div>
 <script src="js/script.js"></script>
 </body>
 </html>

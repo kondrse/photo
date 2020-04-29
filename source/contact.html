@@ -5,9 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Анна Кондакова - Фотограф</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <div class="page-header__wrapper fix-nav">
+    <header class="page-header">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo.svg" alt="Анна Кондакова">
+        </a>
+      </div>
+      <div class="page-header__nav">
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="item-link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="item-link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="site-list__item">
+              <a class="item-link" href="about.html">Обо мне</a>
+            </li>
+            <li class="site-list__item">
+              <a class="item-link" href="price.html">Прайс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="item-link item-link--active">Контакты</a>
+           </li>
+         </ul>
+        </nav>
+      </div>   
+    </header>
+  </div>
+  <div class="main-footer__wrapper">
+    <main class="main-content">
+      <div class="main-content__contact-wrapper">
+      	<div class="main-content__text">
+          <h2>Контакты</h2>
+          <p>annakonda@gmail.com</p>
+          <span>+79213333333</span>
+          <p>vk.com/yourphotographerspb</p>
+        </div>
+        <div class="main-content__form">
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          	<fieldset class="form__fieldset">
+          	  <legend class="form__legend">Обратная связь</legend>
+          	  	<ul class="form__list">
+          	  		<li class="form__item">
+          	  		  <label class="form__label" for="name">Имя</label>
+          	  		  <input class="form__input" id="name" type="text" name="name" placeholder="Анна" required>
+          	  		</li>
+          	  		<li class="form__item">
+          	  		  <label class="form__label" for="suname">Фамилия</label>
+          	  		  <input class="form__input" id="suname" type="text" name="suname" placeholder="Иванова" required>
+          	  		</li>
+          	  		<li class="form__item">
+          	  		  <label class="form__label" for="tel">Телефон</label>
+          	  		  <input class="form__input" id="tel" type="tel" name="phone" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+X-XXX-XXX-XX-XX" required>
+          	  		</li>
+          	  	</ul>
+          	</fieldset>
+          	<input class="form__button" type="submit" name="submit-button">
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__copperight">
+        <p class="copiperight-text">&copy; Анна Кондакова</p>
+      </div>
+      <div class="page-footer__social-wrapper">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="">
+              <img class="social-list__link-image" src="img/whatsapp.svg" alt="whatsapp">
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://www.instagram.com/anakondafoto/">
+              <img class="social-list__link-image" src="img/instagram.svg" alt="instagram">
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://vk.com/yourphotographerspb">
+              <img class="social-list__link-image" src="img/vk.svg" alt="vk">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 <script src="js/script.js"></script>
 </body>
 </html>
