@@ -3,7 +3,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  min-width: 600px;
+  min-width: 450px;
   max-width: 1150px;
   color: #000000;
   margin: 0 auto;
@@ -11,6 +11,18 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+a.idTop {
+  position: fixed;
+  z-index: 9999;
+  bottom: 0%;
+  right: 0%;
+  background: #000000;
+  opacity: 0.6;
+  color: #ffffff;
+  padding: 10px;
+  margin: 5px 15px;
+  border-radius: 4px;
 }
 img {
   max-width: 100%;
@@ -42,7 +54,7 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0;
+  margin: 0 auto;
 }
 /**
  * Render the `main` element consistently in IE.
@@ -366,6 +378,9 @@ input[type="radio"].visually-hidden {
   margin: auto;
   background-color: #ffffff;
 }
+.page-header__wrapper {
+  margin: 0 auto;
+}
 .page-header__logo-wrapper {
   margin-top: 10px;
   padding: 0 10px;
@@ -426,15 +441,35 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   margin-top: 0;
 }
+.main-footer__wrapper {
+  margin: 0 auto;
+}
 .main-content {
   padding: 0;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main-content__portfolio-wrapper {
+  margin-bottom: 20px;
+}
+.main-content__portfolio-nav-wrapper {
+  max-width: 1000px;
   margin-top: 50px;
 }
 .main-content__photo-wrapper {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 .main-content__contact-wrapper {
@@ -442,7 +477,7 @@ input[type="radio"].visually-hidden {
   margin-left: 100px;
 }
 .main-content__image {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 .main-content__about-wrapper {
@@ -488,6 +523,13 @@ input[type="radio"].visually-hidden {
   width: 35px;
   fill: #878787;
 }
+.photo-galery {
+  margin-top: 100px;
+}
+.photo-galery__head {
+  text-align: center;
+  padding-top: 20px;
+}
 .photo-galery-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,7 +545,7 @@ input[type="radio"].visually-hidden {
   margin: 10px 10px;
 }
 .photo-galery-list__item:hover {
-  width: 600px;
+  width: 390px;
 }
 .photo-galery-list__text {
   color: #808080;
@@ -577,6 +619,25 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+.portfolio-nav__list {
+  min-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
