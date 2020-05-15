@@ -1,4 +1,43 @@
 .page-header {
+	position: relative;
+	display: block;
+
+	&__logo-wrapper {
+		margin: 5px 30%;
+	}
+
+	&__logo {
+		margin: 0 auto;
+		min-width: 100px;
+	}
+
+	
+}
+
+@media (min-width: @table-width) {
+.page-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	&__logo-wrapper {
+		margin: 0;
+	}
+
+	&__logo-image {
+		min-width: 180px;
+	}
+
+	&__nav {
+		display: flex;
+	}
+}
+}
+
+@media (min-width: @desktop-width) {
+
+.page-header {
 	font-size: 20px;
 	min-height: 50px;
 	display: -webkit-box;
@@ -30,4 +69,5 @@
 .page-header__logo-image {
 	
 	min-width: 200px;
+}
 }

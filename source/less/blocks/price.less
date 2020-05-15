@@ -1,4 +1,23 @@
 .price {
+	margin: 50px;
+}
+
+.price__list {
+	padding-left: 0;
+}
+
+.price__item {
+	min-width: 320px;
+}
+
+.price__item--wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@media (min-width: @table-width) {
+	.price {
 	margin-top: 50px;
 	margin-left: 50px;
 	margin-bottom: 50px;
@@ -27,4 +46,6 @@
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+}
+
 }

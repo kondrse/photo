@@ -12,12 +12,19 @@
 <body>
   <div class="page-header__wrapper fix-nav">
     <header class="page-header">
+      <a class="main-nav__toggle toggle" id="nav-butten-opener">
+        <span class="visually-hidden">Открыть меню</span>
+      </a>
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo.svg" alt="Анна Кондакова">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo.svg" type="">
+            <source media="(min-width: 768px)" srcset="img/logo-mobile.svg" type="">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Анна Кондакова">
+          </picture>
         </a>
       </div>
-      <div class="page-header__nav">
+      <div class="page-header__nav" id="nav">
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -44,7 +51,11 @@
     <main class="main-content">
       <div class="main-content__about-wrapper">
         <div class="main-content__photo--about">
-          <img class="main-content__image" src="img/my-photo.jpg" alt="Мое Фото">
+          <picture class="main-content__image--about">
+            <source media="(min-width: 1150px)" srcset="img/my-photo.jpg" type="">
+            <source media="(min-width: 768px)" srcset="img/my-photo-tablet.jpg" type="">
+            <img class="main-content__image" src="img/my-photo-mobile.jpg" alt="Анна Кондакова">
+          </picture>
         </div>
         <div class="main-content__text--about">
           <p class="text__about--first">Рада приветствовать Вас на моем сайте! Меня зовут Анна, я занимаюсь любимым делом - я фотограф!</p>

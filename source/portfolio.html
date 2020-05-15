@@ -11,12 +11,19 @@
 <body>
   <div class="page-header__wrapper fix-nav" id="top">
     <header class="page-header">
+      <a class="main-nav__toggle toggle" id="nav-butten-opener">
+        <span class="visually-hidden">Открыть меню</span>
+      </a>
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo.svg" alt="Анна Кондакова">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo.svg" type="">
+            <source media="(min-width: 768px)" srcset="img/logo-mobile.svg" type="">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Анна Кондакова">
+          </picture>
         </a>
       </div>
-      <div class="page-header__nav">
+      <div class="page-header__nav" id="nav">
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -47,19 +54,19 @@
       <div class="main-content__portfolio-nav-wrapper">
         <ul class="portfolio-nav__list">
           <li class="portfolio-nav__item">
-            <a href="#portrate">Портретная сьемка</a>
+            <a class="portfolio-nav__link" href="#portrate">Портретная сьемка</a>
           </li>
           <li class="portfolio-nav__item">
-            <a href="#studio">Студийная сьемка</a>
+            <a class="portfolio-nav__link" href="#studio">Студийная сьемка</a>
           </li>
           <li class="portfolio-nav__item">
-            <a href="#kids">Детская сьемка</a>
+            <a class="portfolio-nav__link" href="#kids">Детская сьемка</a>
           </li>
           <li class="portfolio-nav__item">
-            <a href="#outdoor">Уличная сьемка</a>
+            <a class="portfolio-nav__link" href="#outdoor">Уличная сьемка</a>
           </li>
           <li class="portfolio-nav__item">
-            <a href="#report">Репортажная сьемка</a>
+            <a class="portfolio-nav__link" href="#report">Репортажная сьемка</a>
           </li>
         </ul>
       </div>
