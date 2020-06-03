@@ -1,73 +1,69 @@
 .page-header {
-	position: relative;
-	display: block;
+  position: relative;
+  display: block;
 
-	&__logo-wrapper {
-		margin: 5px 30%;
-	}
+  &__logo-wrapper {
+    margin: 5px 30%;
+  }
 
-	&__logo {
-		margin: 0 auto;
-		min-width: 100px;
-	}
-
-	
+  &__logo {
+    margin: 0 auto;
+    min-width: 100px;
+  }
 }
 
 @media (min-width: @table-width) {
-.page-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-	&__logo-wrapper {
-		margin: 0;
-	}
+    &__logo-wrapper {
+      margin: 0;
+    }
 
-	&__logo-image {
-		min-width: 180px;
-	}
+    &__logo-image {
+      min-width: 180px;
+    }
 
-	&__nav {
-		display: flex;
-	}
-}
+    &__nav {
+      display: flex;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    font-size: 20px;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+    background-color: @bg-header;
+  }
 
-.page-header {
-	font-size: 20px;
-	min-height: 50px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	margin: auto;
-	background-color: @bg-header;
-}
+  .page-header__wrapper {
+    margin: 0 auto;
+  }
 
-.page-header__wrapper {
-	margin: 0 auto;
-}
+  .page-header__logo-wrapper {
+    margin-top: 10px;
+    padding: 0 10px;
+  }
 
-.page-header__logo-wrapper {
-	margin-top: 10px;
-	padding: 0 10px;
-}
-
-.page-header__logo-image {
-	
-	min-width: 200px;
-}
+  .page-header__logo-image {
+    min-width: 200px;
+  }
 }

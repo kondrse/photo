@@ -1,72 +1,72 @@
 .photo-galery {
-	min-width: 320px;
-	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  min-width: 320px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .photo-galery-list {
-	padding-left: 0;
+  padding-left: 0;
 }
 
 .photo-galery-list__item {
-	width: 320px;
-	margin-top: 20px;
+  width: 320px;
+  margin-top: 20px;
 }
 
 @media (min-width: @table-width) {
-	.photo-galery {
-		min-width: 650px;
-		flex-direction: row;
-		justify-content: center;
-		flex-wrap: wrap;
+  .photo-galery {
+    min-width: 650px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 
-		&-list {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-			align-items: center;
-			flex-wrap: wrap;
-		}
+    &-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-		&-list__item {
-			width: 360px;
-		}
-	}
+    &-list__item {
+      width: 360px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
-	.photo-galery {
-	margin-top: 100px;
-}
+  .photo-galery {
+    margin-top: 100px;
+  }
 
-.photo-galery__head {
-	text-align: center;
-	padding-top: 20px;
-}
+  .photo-galery__head {
+    text-align: center;
+    padding-top: 20px;
+  }
 
-.photo-galery-list {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-}
+  .photo-galery-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 
-.photo-galery-list__item {
-	width: 450px;
-	margin: 10px 10px;
-}
+  .photo-galery-list__item {
+    width: 450px;
+    margin: 10px 10px;
+  }
 
-.photo-galery-list__item:hover {
-	width: 470px;
-}
+  .photo-galery-list__item:hover {
+    width: 470px;
+  }
 
-.photo-galery-list__text {
-	color: @small-text;
-}
+  .photo-galery-list__text {
+    color: @small-text;
+  }
 }

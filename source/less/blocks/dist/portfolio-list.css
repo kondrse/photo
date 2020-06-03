@@ -4,7 +4,6 @@
   right: 0px;
   list-style: none;
 }
-
 .portfolio-list__item {
   min-width: 170px;
   height: 45px;
@@ -14,7 +13,6 @@
   text-align: center;
   padding: 5px auto;
 }
-
 .portfolio-list__link {
   font-size: 14px;
   margin: 0;
