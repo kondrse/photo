@@ -1,0 +1,20 @@
+.portfolio-list {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  list-style: none;
+}
+.portfolio-list__item {
+  min-width: 170px;
+  height: 45px;
+  background-color: rgba(242, 242, 242, 0.8);
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
+  padding: 5px auto;
+}
+.portfolio-list__link {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}

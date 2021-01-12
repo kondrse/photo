@@ -1,0 +1,97 @@
+.main-content {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-content__photo--about {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content__about-wrapper {
+  margin: 0 auto;
+}
+
+.main-content__text--about {
+  font-style: italic;
+  font-size: 16px;
+  min-width: 320px;
+  padding: 0 30px;
+}
+
+@media (min-width: @desktop-width){
+  .main-content {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-content__portfolio-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .main-content__portfolio-nav-wrapper {
+    max-width: 1000px;
+    margin-top: 50px;
+  }
+
+  .main-content__photo-wrapper {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .main-content__contact-wrapper {
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+
+  .main-content__image {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .main-content__about-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+
+  .main-content__photo--about {
+    margin-left: 50px;
+    max-width: 640px;
+    padding: 0;
+  }
+
+  .main-content__text--about {
+    font-family:'DietDidotTitleItalic';
+    font-style: italic;
+    font-size: 16px;
+    width: 600px;
+    margin-right: 50px;
+    margin-left: 50px;
+    }
+
+  .text__about--first {
+    margin-top: 0;
+  }
+
+}

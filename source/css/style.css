@@ -904,6 +904,12 @@ input[type="radio"].visually-hidden {
 .portfolio-nav__item {
   min-height: 30px;
 }
+.portfolio-nav__link:hover {
+  color: #666666;
+}
+.portfolio-nav__link:active {
+  color: #b2b2b2;
+}
 @media (min-width: 1150px) {
   .portfolio-nav__list {
     min-width: 700px;

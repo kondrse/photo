@@ -3,13 +3,39 @@ body {
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
+  min-width: 450px;
+  max-width: 1150px;
+  color: @main-text;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+a.idTop {
+  position: fixed;
+  z-index: 9999;
+  bottom: 0%;
+  right: 0%;
+  background: #000000;
+  opacity: .6;
+  color: #ffffff;
+  padding: 10px;
+  margin: 5px 15px;
+  border-radius: 4px;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.visualy-hiden {
+  display: none;
 }
